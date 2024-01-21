@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Founder;
+    src: url(/FoundersGroteskCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: CardinalR;
+    src: url(/cardinalfruitweb-regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Founder;
+}
+html{
+    font-size: 62.5%;
+}
+#hero,#next{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+#top{
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    overflow-y: hidden;
+    z-index: 10;
+}
+#center{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottom{
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    overflow-y: hidden;
+    display: flex;
+    z-index: 10;
+}
+.m-h1{
+    font-size: 25rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#top .m-h1 {
+    top: 70%;
+}
+#bottom .m-h1 {
+    bottom: 70%;
+}
+.c-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    width: 800px;
+}
+.c-box h1{
+    font-size: 6rem;
+}
+.c-box h1 span{
+    font-size: 15rem;
+}
+.c-box p {
+    font-size: 2rem;
+    font-family: 'Verdana';
+    line-height: 3.5rem;
+}
